@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #12c2e9; /* Solid background color */
+  color: white;
+}
+
+.infinite-scroll-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: auto; /* Changed from smooth to auto for instant scrolling */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.infinite-scroll-container::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none; /* Chrome, Safari, and Opera */
+}
+
+.content {
+  padding: 20px 20px 0 20px;
+  will-change: transform;
+}
+
+.content-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 20px;
+  height: 200px; /* Fixed height for consistent scrolling */
+}
+
+#scroll-start, #scroll-end {
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 10px 0;
+  
+}
+
+/* Removed hover effect and transform */
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+}
